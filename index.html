@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<input type="number" id="jumlah" name="jumlah" value="" >
+<input type="number" id="beratbarang" name="beratbarang" value="" >
+<br>
+<input type="text" id="jumlahprimari" name="jumlahprimari" value="">
+<input type="text" id="beratprimari" name="beratprimari" value="">
+
+
+
+<script>
+$("#jumlah").keyup(function(){
+    updatesatu();
+});
+
+function updatesatu() {
+  $("#jumlahprimari").val($('#jumlah').val());
+}
+
+$("#beratbarang").keyup(function(){
+    updatedua();
+});
+
+function updatedua() {
+  $("#beratprimari").val($('#beratbarang').val());
+}
+</script>
+	
+	
+	
+</body>
+</html>
